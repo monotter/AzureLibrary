@@ -307,7 +307,7 @@ function library:Main(name, version)
     
             local function Fire()
                 enabled = not enabled
-                ToggleOn:TweenSize(enabled and UDim2.new(0, 37, 0, 18) or UDim2.new(0, 0, 0, 18), "InOut", "Linear", 0.1)
+                ToggleOn:TweenSize(enabled and UDim2.new(0, 37, 0, 18) or UDim2.new(0, 0, 0, 18), "InOut", "Linear", 0)
                 pcall(callback, enabled)
             end
     
