@@ -8,32 +8,6 @@
               
 ]]--
 
---custom theme
-_G.CustomTheme = {
-	Tab_Color = Color3.fromRGB(255, 255, 255),
-    Tab_Text_Color = Color3.fromRGB(0, 0, 0),
-    Description_Color = Color3.fromRGB(255, 255, 255),
-    Description_Text_Color = Color3.fromRGB(0, 0, 0),
-    Container_Color = Color3.fromRGB(255, 255, 255),
-    Container_Text_Color = Color3.fromRGB(0, 0, 0),
-    Button_Text_Color = Color3.fromRGB(0, 0, 0),
-    Toggle_Box_Color = Color3.fromRGB(243, 243, 243),
-    Toggle_Inner_Color = Color3.fromRGB(94, 255, 180),
-    Toggle_Text_Color = Color3.fromRGB(0, 0, 0),
-    Toggle_Border_Color = Color3.fromRGB(225, 225, 225),
-    Slider_Bar_Color = Color3.fromRGB(243, 243, 243),
-    Slider_Inner_Color = Color3.fromRGB(94, 255, 180),
-    Slider_Text_Color = Color3.fromRGB(0, 0, 0),
-	Slider_Border_Color = Color3.fromRGB(255, 255, 255),
-    Dropdown_Text_Color = Color3.fromRGB(0, 0, 0),
-    Dropdown_Option_BorderSize = 1,
-    Dropdown_Option_BorderColor = Color3.fromRGB(235, 235, 235),
-    Dropdown_Option_Color = Color3.fromRGB(255, 255, 255),
-    Dropdown_Option_Text_Color = Color3.fromRGB(0, 0, 0),
-	TextBox_Text_Color = Color3.fromRGB(0, 0, 0),
-	TextBox_Color = Color3.fromRGB(255, 255, 255)
-}
-
 --light theme
 local theme = {
     Tab_Color = Color3.fromRGB(255, 255, 255),
@@ -50,15 +24,15 @@ local theme = {
     Slider_Bar_Color = Color3.fromRGB(243, 243, 243),
     Slider_Inner_Color = Color3.fromRGB(94, 255, 180),
     Slider_Text_Color = Color3.fromRGB(0, 0, 0),
-	Slider_Border_Color = Color3.fromRGB(255, 255, 255),
+    Slider_Border_Color = Color3.fromRGB(255, 255, 255),
     Dropdown_Text_Color = Color3.fromRGB(0, 0, 0),
     Dropdown_Option_BorderSize = 1,
     Dropdown_Option_BorderColor = Color3.fromRGB(235, 235, 235),
     Dropdown_Option_Color = Color3.fromRGB(255, 255, 255),
     Dropdown_Option_Text_Color = Color3.fromRGB(0, 0, 0),
-	TextBox_Text_Color = Color3.fromRGB(0, 0, 0),
-	TextBox_Color = Color3.fromRGB(255, 255, 255),
-	TextBox_Underline_Color = Color3.fromRGB(94, 255, 180)
+    TextBox_Text_Color = Color3.fromRGB(0, 0, 0),
+    TextBox_Color = Color3.fromRGB(255, 255, 255),
+    TextBox_Underline_Color = Color3.fromRGB(94, 255, 180)
 }
 
 --dark theme
@@ -77,15 +51,15 @@ local dark_theme = {
     Slider_Bar_Color = Color3.fromRGB(31, 32, 33),
     Slider_Inner_Color = Color3.fromRGB(255, 92, 92),
     Slider_Text_Color = Color3.fromRGB(255, 255, 255),
-	Slider_Border_Color = Color3.fromRGB(50, 49, 50),
+    Slider_Border_Color = Color3.fromRGB(50, 49, 50),
     Dropdown_Text_Color = Color3.fromRGB(255, 255, 255),
     Dropdown_Option_BorderSize = 1,
     Dropdown_Option_BorderColor = Color3.fromRGB(49, 50, 51),
     Dropdown_Option_Color = Color3.fromRGB(31, 32, 33),
     Dropdown_Option_Text_Color = Color3.fromRGB(255, 255, 255),
-	TextBox_Text_Color = Color3.fromRGB(255, 255, 255),
-	TextBox_Color = Color3.fromRGB(31, 32, 33),
-	TextBox_Underline_Color = Color3.fromRGB(255, 92, 92)
+    TextBox_Text_Color = Color3.fromRGB(255, 255, 255),
+    TextBox_Color = Color3.fromRGB(31, 32, 33),
+    TextBox_Underline_Color = Color3.fromRGB(255, 92, 92)
 }
 
 if game:GetService("CoreGui"):FindFirstChild("uiui") then game:GetService("CoreGui"):FindFirstChild("uiui"):Destroy() end
