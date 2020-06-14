@@ -76,6 +76,14 @@ uiui.Name = "uiui"
 uiui.Parent = game:GetService("CoreGui")
 uiui.DisplayOrder = 1
 
+function KeyPress(input, gameProcessed)
+    if input.KeyCode == _G.KeyBind or Enum.KeyCode.RightShift then
+        uiui.Enabled = not uiui.Enabled
+    end
+end
+
+game:GetService("UserInputService").InputBegan:Connect(KeyPress)
+
 background.Name = "background"
 background.Parent = uiui
 background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
