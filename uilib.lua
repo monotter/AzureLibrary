@@ -77,7 +77,7 @@ uiui.Parent = game:GetService("CoreGui")
 uiui.DisplayOrder = 1
 
 function KeyPress(input, gameProcessed)
-    if input.KeyCode == _G.KeyBind or Enum.KeyCode.RightShift then
+    if input.KeyCode == library.KeyBind or Enum.KeyCode.RightShift then
         uiui.Enabled = not uiui.Enabled
     end
 end
