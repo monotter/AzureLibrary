@@ -76,6 +76,13 @@ uiui.Name = "uiui"
 uiui.Parent = game:GetService("CoreGui")
 uiui.DisplayOrder = 1
 
+if syn then
+    pcall(function()
+        syn.protect_gui(game:GetService("CoreGui"))
+    end)
+end
+
+
 function KeyPress(input, gameProcessed)
     if input.KeyCode == _G.KeyBind or Enum.KeyCode.RightShift then
         uiui.Enabled = not uiui.Enabled
