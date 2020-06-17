@@ -76,15 +76,6 @@ uiui.Name = "uiui"
 uiui.Parent = game:GetService("CoreGui")
 uiui.DisplayOrder = 1
 
--- [[
-function KeyPress(input, gameProcessed)
-    if input.KeyCode == Enum.KeyCode.RightShift then
-        uiui.Enabled = not uiui.Enabled
-    end
-end
-game:GetService("UserInputService").InputBegan:Connect(KeyPress)
-]] --
-
 background.Name = "background"
 background.Parent = uiui
 background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -100,13 +91,14 @@ UIPadding.PaddingLeft = UDim.new(0, 10)
 UIPadding.PaddingTop = UDim.new(0, 10)
 
 function library:CreateTab(text, desc, mode)
-	text = text or ""
-	desc = desc or ""
+    text = text or ""
+    desc = desc or ""
+    mode = mode or false
 	
     if mode then
         theme = dark_theme
-	elseif mode == nil then
-		theme = _G.CustomTheme
+    elseif mode == nil then
+        theme = _G.CustomTheme
     end
     local Tab = Instance.new("ImageButton")
     local tabtext = Instance.new("TextLabel")
