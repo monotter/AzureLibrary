@@ -62,7 +62,7 @@ local dark_theme = {
     TextBox_Underline_Color = Color3.fromRGB(255, 92, 92)
 }
 
-if game:GetService("Players").PlayerGui:FindFirstChild("uiui") then game:GetService("Players").PlayerGui:FindFirstChild("uiui"):Destroy() end
+if game:GetService("CoreGui"):FindFirstChild("uiui") then game:GetService("CoreGui"):FindFirstChild("uiui"):Destroy() end
 
 local library = {}
 local uiui = Instance.new("ScreenGui")
@@ -73,15 +73,8 @@ local UIPadding = Instance.new("UIPadding")
 local TweenService = game:GetService("TweenService")
 
 uiui.Name = "uiui"
-uiui.Parent = game:GetService("Players").PlayerGui
+uiui.Parent = game:GetService("CoreGui")
 uiui.DisplayOrder = 1
-
-if syn then
-    pcall(function()
-        syn.protect_gui(game:GetService("CoreGui"))
-    end)
-end
-
 
 function KeyPress(input, gameProcessed)
     if input.KeyCode == _G.KeyBind or Enum.KeyCode.RightShift then
