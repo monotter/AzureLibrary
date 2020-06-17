@@ -76,13 +76,14 @@ uiui.Name = "uiui"
 uiui.Parent = game:GetService("CoreGui")
 uiui.DisplayOrder = 1
 
+-- [[
 function KeyPress(input, gameProcessed)
     if input.KeyCode == Enum.KeyCode.RightShift then
         uiui.Enabled = not uiui.Enabled
     end
 end
-
 game:GetService("UserInputService").InputBegan:Connect(KeyPress)
+]] --
 
 background.Name = "background"
 background.Parent = uiui
